@@ -1,0 +1,8 @@
+/*----------- Diseño adaptable: Resolución horizontal -----------*/
+
+@media (max-width: 512px) {
+    .navbar {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+}
