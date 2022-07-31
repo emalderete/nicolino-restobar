@@ -1,29 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/*------------ Navbar y mini navbar -------------*/
+
 .navbarContainer {
     width: 100%;
     background-color: #ededed00;
-    border: 1px solid blue;
 }
 
 .navbar {
     display: flex;
-    margin: 1rem 8vw;
+    margin: 0rem 8vw;
+    padding: 0.5rem 0;
     justify-content: space-between;
 }
 
 .navbarItems {
     list-style: none;
     display: flex;
+    align-items: center;
 }
 
 .navbarItem {
     margin: 0 2vw;
     border-radius: 3px;
+    font-family: 'Merriweather', serif;
+    font-size: 100%;
+}
+
+.navLink {
+    text-decoration: none;
+    color: #333333;
 }
 
 .navbarItemActived {
     border-bottom: 4px solid #79a957;
 }
 
-.brandContainer {
-    margin-top: 1rem;
+.brand {
+    width: 12rem;
+    font-family: 'Merriweather', serif;
+}
+
+.miniNavbar {
+    position: absolute;
+    right: 0;
+    border-bottom-left-radius: 10px;
+    background-color: #a3876f;
+    box-shadow: -2px 5px 8px #a6a6a6;
+    z-index: 1;
+    transform: translateY(-10rem);
+}
+
+.miniNavbarButton {
+    background-color: #ffffff00;
+    position: absolute;
+    border: none;
+    color: #79a957;
+    right: 3.1rem;
+    top: 1.2rem;
+    font-size: 2.2rem;
+    transform: rotateX(180deg);
+}
+
+.miniNavbarItems {
+    list-style: none;
+    padding: 0.2rem 1rem;
+}
+
+.miniNavbarItem {
+    margin: 1.5rem 0.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+.miniNavLink {
+    color: #ffffff;
+}
+
+.miniNavLinkActived {
+    border-bottom: 3px solid #ffffff;
 }

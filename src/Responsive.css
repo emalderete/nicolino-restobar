@@ -1,8 +1,28 @@
 /*----------- Diseño adaptable: Resolución horizontal -----------*/
 
-@media (max-width: 512px) {
+@media (max-width: 721px) {
     .navbar {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .brand {
+        width: 10rem;
+    }
+    .navbarItems {
+        display: none;
+    }
+    .navbarContainer {
+        background-color: #e1f5d1;
+        position: absolute;
+        z-index: 2;
+    }
+}
+
+@media (min-width: 720.9px) {
+    .miniNavbarButton {
+        display: none;
+    }
+    .miniNavbar {
+        display: none;
     }
 }
